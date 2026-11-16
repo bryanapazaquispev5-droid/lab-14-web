@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import LazyLoadedComponent from "./LazyLoadedComponent";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -32,6 +33,7 @@ export default function Home() {
         alt="Ejemplo de imagen optimizada"
         priority
       />
+      <LazyLoadedComponent />
     </>
   );
 }
