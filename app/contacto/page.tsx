@@ -4,12 +4,16 @@ export const metadata: Metadata = {
   title: "Contacto | Mi Sitio Optimizado",
   description:
     "Ponte en contacto con Mi Sitio Optimizado para consultas sobre SEO y Next.js.",
+  alternates: {
+    canonical: "/contacto",
+  },
   openGraph: {
     title: "Contacto | Mi Sitio Optimizado",
     description:
       "Ponte en contacto con Mi Sitio Optimizado para consultas sobre SEO y Next.js.",
     images: ["/images/seo-image.png"],
     type: "website",
+    url: "/contacto",
   },
 };
 

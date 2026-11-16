@@ -7,12 +7,16 @@ export const metadata: Metadata = {
   title: "Blog de SEO y Next.js | Mi Sitio Optimizado",
   description:
     "Consejos prácticos sobre SEO, rendimiento y desarrollo web con Next.js.",
+  alternates: {
+    canonical: "/blog",
+  },
   openGraph: {
     title: "Blog de SEO y Next.js",
     description:
       "Consejos prácticos sobre SEO, rendimiento y desarrollo web con Next.js.",
     images: ["/images/seo-image.png"],
     type: "website",
+    url: "/blog",
   },
 };
 

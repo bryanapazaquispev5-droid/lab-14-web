@@ -22,11 +22,15 @@ export async function generateMetadata({
   return {
     title: `${post.title} | Mi Sitio Optimizado`,
     description: post.description,
+    alternates: {
+      canonical: `/blog/${post.slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.description,
       images: ["/images/seo-image.png"],
       type: "article",
+      url: `/blog/${post.slug}`,
       ...(post.publishedAt ? { publishedTime: post.publishedAt } : {}),
     },
   };
