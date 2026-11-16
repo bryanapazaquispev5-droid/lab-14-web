@@ -23,7 +23,8 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function Home() {
   return (
     <>
-      <h1>Bienvenido</h1>
+      <h1>Bienvenido a mi página optimizada</h1>
+      <p>Aprende cómo mejorar el rendimiento y SEO en Next.js.</p>
       <Image
         src="/images/seo-image.png"
         width={800}
