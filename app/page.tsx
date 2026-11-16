@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -21,9 +22,15 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function Home() {
   return (
-    <main>
-      <h1>Bienvenido a mi página optimizada</h1>
-      <p>Aprende cómo mejorar el rendimiento y SEO en Next.js.</p>
-    </main>
+    <>
+      <h1>Bienvenido</h1>
+      <Image
+        src="/images/seo-image.png"
+        width={800}
+        height={400}
+        alt="Ejemplo de imagen optimizada"
+        priority
+      />
+    </>
   );
 }
