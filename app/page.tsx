@@ -6,6 +6,9 @@ export async function generateMetadata(): Promise<Metadata> {
     description:
       "Aprende sobre optimización SEO y rendimiento en Next.js.",
     keywords: ["Next.js", "SEO", "optimización web"],
+    verification: {
+      google: "0yC0MSddv8cYB07YBfKp1vergU7VvN-jBMUGHZEIyz8",
+    },
     openGraph: {
       title: "Mi Sitio Optimizado",
       description:
